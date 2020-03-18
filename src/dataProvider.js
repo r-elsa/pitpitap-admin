@@ -17,6 +17,6 @@ const httpClient = (url, options = {}) => {
   };
   
 
-  export const dataProvider = jsonServerProvider('http://localhost:9000/api/admin', httpClient);
+  export const dataProvider = jsonServerProvider('https://pitpitap-server-staging.herokuapp.com/api/admin', httpClient);
 
 
