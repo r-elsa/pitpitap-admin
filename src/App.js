@@ -8,11 +8,28 @@ import Dashboard from './Dashboard'
 import {dataProvider} from './dataProvider'
 
 
-const App = () => 
-<Admin dataProvider={dataProvider} authProvider={authProvider} dashboard={Dashboard}>   
-<Resource name="faq" list={QaList} edit={QaEdit} create={QaCreate} show={QaShow} />
-<Resource name="slides" list ={SlideList} edit={SlideEdit} create={SlideCreate} show={SlideShow} />
-</Admin>
+const App = () => (
+  <Admin
+    dataProvider={dataProvider}
+    authProvider={authProvider}
+    dashboard={Dashboard}
+  >
+    <Resource
+      name="faq"
+      list={QaList}
+      edit={QaEdit}
+      create={QaCreate}
+      show={QaShow}
+    />
+    <Resource
+      name="slides"
+      list={SlideList}
+      edit={SlideEdit}
+      create={SlideCreate}
+      show={SlideShow}
+    />
+  </Admin>
+);
 
  
 export default App;
